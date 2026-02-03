@@ -14,8 +14,13 @@ header{
     border:1px solid red;
     display: flex;
     justify-content: space-between;
-    height:80px;
+    max-height:80px;
     overflow: hidden;
+    background: pink;
+    transition:all 0.6s ease 0s;
+}
+header:hover{
+    max-height:400px;
 }
 .logo{
     border:1px solid blue;
