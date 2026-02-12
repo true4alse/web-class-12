@@ -16,6 +16,8 @@
             let userWeight = Number(prompt("몸무게를 입력하시오"))
             let userHeight = Number(prompt("키를 입력하시오"))
             let bmi = (userWeight / Math.pow(userHeight/100,2)).toFixed(2)
+            let numberBmi = userWeight / Math.pow(userHeight/100,2)
+            let bmiState = numberBmi<=18.5?"저체중":numberBmi<=23?"정상":numberBmi<=25?"과체중":"비만"
             document.write(`
             <dl class="bmi-dl">
                 <dt>이름</dt>
@@ -26,6 +28,8 @@
                 <dd>${userHeight}cm</dd>
                 <dt>bmi</dt>
                 <dd>${bmi}</dd>
+                <dt>상태</dt>
+                <dd>${bmiState}</dd>
             </dl>
             `)
 
