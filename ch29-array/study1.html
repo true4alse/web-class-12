@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <script>
+        let a = ["사과","배","귤","수박"]
+        console.log(a[0][1])
+        console.log(a[2])
+        console.log(a.length)
+        let b = [
+            1,
+            2,
+            3,
+            4
+        ][3]
+        let c = [
+            "장윤서",
+            "이은지",
+            "김선영",
+            "김가희",
+            "최예슬"
+        ]
+        c[0] // "장윤서"
+        c[4] // "최예슬"
+        c[1].length  //3
+        c[2][1]+c[3][2] // "선희"
+        console.log((!"김가희"||!c[4]||c[1])[0])
+
+        let d = 0||0||0
+        console.log(d)
+
+        let person1 = ["정현진","남자","infp",170,77,false,["게임","독서","러닝"]]
+        person1[0] // "정현진"
+        person1[3] // 170
+        person1[5]?"기혼":"미혼" // "미혼"
+        person1[6][2][1] // "닝"
+
+
+
+
+
+
+    </script>
+</body>
+</html>
