@@ -1,3 +1,9 @@
+:root{
+    --base-pc:20px;
+    --base-tab:18px;
+    --base-mobile:14px;
+}
+
 html{
     font-family: 'Pretendard',sans-serif;
     font-weight: 400;
@@ -82,4 +88,70 @@ html{
     -webkit-line-clamp: 2;         /* 보여줄 최대 줄 수 */
     overflow: hidden;              /* 넘치는 내용 숨기기 */
     text-overflow: ellipsis;       /* 말줄임 표기(보조) */
+}
+
+@media (max-width:5120px){}
+@media (max-width:3840px){}
+@media (max-width:1920px){
+    html{
+        font-size:var(--base-pc);
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size:var(--base-tab);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .banner h2 {
+        width: auto;
+        margin: 0 2rem;
+        font-size: 4.4rem;
+        line-height: 90%;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .banner {
+        height: 600px;
+        margin-top: 5rem;
+        background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size:var(--base-mobile);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .banner {
+        height: 500px;
+        margin-top: 5rem;
+        background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .banner h2 {
+        width: auto;
+        margin: 0 1rem;
+        font-size: 3.5rem;
+        line-height: 90%;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+    }
+    .gallery {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
 }
