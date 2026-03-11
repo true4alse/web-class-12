@@ -110,12 +110,12 @@ header .common-frame{
 .train{
     display: flex;
     flex-direction: column;
-    height:300%;
+    height:400%;
     transition:all 1s ease 0s;
 }
 .train li{
     flex:1;
-    /* line-height: 0; */
+    line-height: 0;
 }
 .content{
     display: flex;
