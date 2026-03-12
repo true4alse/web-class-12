@@ -9,7 +9,26 @@ html{
     background-color: #fff;
     color:#333;
 }
-.popup{display: none;}
+.popup{
+    position: fixed;
+    width:300px;
+    padding:30px;
+    left:300px;
+    top:300px;
+    background-color: #fff;
+    z-index: 2000;
+    display: none;
+}
+.popup.on{
+    display: block;
+}
+.popup p{
+    margin:10px 0;
+}
+.popup-ctl{
+    display: flex;
+    justify-content: flex-end;
+}
 .container{
     width:1000px;
     display: flex;
@@ -133,6 +152,7 @@ footer{
     color:#fff;
     height:100px;
     display: flex;;
+    align-items: center;
 }
 .fmenu{
     display: flex;
