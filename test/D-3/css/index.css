@@ -164,6 +164,9 @@ main{
     display: flex;
     gap:20px;
 }
+.gallery img{
+    height:100px;
+}
 .tab-desc>div{
     display: none;
 }
